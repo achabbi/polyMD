@@ -1,0 +1,13 @@
+; Include forcefield parameters
+#include "/project2/depablo/achabbi/ester/forcefield.itp"
+
+; Include molecule topologies
+#include "./EST.itp"
+
+[ system ]
+; Name
+Ester PE
+
+[ molecules ]
+; Compound        #mols
+EST               100

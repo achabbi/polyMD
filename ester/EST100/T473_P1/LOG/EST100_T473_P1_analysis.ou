@@ -1,0 +1,13 @@
+To initialize the oneapi environment, you must run the following:
+source /software/oneapi-2021.beta7-el7-x86_64/inteloneapi/setvars.sh
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+Selected 0: 'System'
+
+Average end to end distance: 4.393 (nm)
+
+Average radius of gyration:  1.689 (nm)

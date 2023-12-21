@@ -1,0 +1,75 @@
+#!/bin/bash
+
+#SBATCH --account=pi-depablo
+#SBATCH --time=24:00:00
+
+#SBATCH --partition=depablo-gpu
+#SBATCH --gres=gpu:1
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=48
+
+#SBATCH --output=LOG/NAME2.ou
+#SBATCH --error=LOG/NAME2.err
+#SBATCH --job-name=NAME2
+
+
+######################### LOAD MODULES #########################
+module load gromacs/2022.4
+
+
+######################### VARIABLES #########################
+code=CODE2   # (ex. EST)
+T=TEMP2  # temperature (K)
+P=PRES2  # pressure (bar)
+TIMENPT=TIMENPT2  # time npt run (ns)
+TIMENVT=TIMENVT2  # time nvt run (ns)
+
+
+######################### FILE PATHS #########################
+original_gro="../TOP/${code}_original.gro"
+gro="../TOP/${code}.gro"
+ff="../TOP/OPLS_${code}.top"
+MDP="/project2/depablo/achabbi/MDP_TEMPLATES"
+
+
+######################### MAKE DIRECTORIES #########################
+mkdir -p MDP
+mkdir -p em
+mkdir -p condense
+mkdir -p npt
+mkdir -p nvt
+
+
+######################### COPY & MODIFY MDP FILES #########################
+cp ${MDP}/* MDP/
+
+sed -i "s/MYTEMP/${T}/g" "MDP/npt.mdp"
+sed -i "s/MYPRES/${P}/g" "MDP/npt.mdp"
+
+sed -i "s/MYTEMP/${T}/g" "MDP/nvt.mdp"
+sed -i "s/MYPRES/${P}/g" "MDP/nvt.mdp"
+
+nstepsnpt=$(($TIMENPT*1000000))
+nstepsnvt=$(($TIMENVT*1000000))
+sed -i "s/MYSTEPS/${nstepsnpt}/g" "MDP/npt.mdp"
+sed -i "s/MYSTEPS/${nstepsnvt}/g" "MDP/nvt.mdp"
+
+
+######################### RUN GROMACS #########################
+if [ ! -e ${gro} ]; then
+	gmx_mpi insert-molecules -ci ${original_gro} -box 50 50 50 -nmol 100 -o ${gro}
+fi
+
+gmx_mpi grompp -maxwarn 10 -c ${gro} -f MDP/minimize.mdp -p ${ff} -o em/em.tpr
+gmx_mpi mdrun -v -deffnm em/em
+
+gmx_mpi grompp -maxwarn 10 -c em/em.gro -f MDP/condense.mdp -p ${ff} -o condense/condense.tpr
+gmx_mpi mdrun -v -deffnm condense/condense
+
+gmx_mpi grompp -maxwarn 10 -c condense/condense.gro -f MDP/npt.mdp -p ${ff} -o npt/npt.tpr
+gmx_mpi mdrun -v -deffnm npt/npt
+
+gmx_mpi grompp -maxwarn 10 -c npt/npt.gro -f MDP/nvt.mdp -p ${ff} -o nvt/nvt.tpr
+gmx_mpi mdrun -v -deffnm nvt/nvt
+
+
