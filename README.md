@@ -1,4 +1,4 @@
-# polyMD: GROMACS MD Simulation Pipeline
+# polyMD
 
 Moleculer dynamics pipeline for running high-throughput simulations on cleavable-bond modified polyethylene. Designed for SLURM-based computing clusters. This uses the [GROMACS](https://www.gromacs.org/) MD simulation software with the OPLS united-atom forcefield.
 
