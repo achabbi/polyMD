@@ -7,16 +7,16 @@ Moleculer dynamics pipeline for running high-throughput simulations on cleavable
 1. Clone repository.
 
 ```sh
-$ git clone https://github.com/achabbi/polyMD.git
-$ cd polyMD/
+git clone https://github.com/achabbi/polyMD.git
+cd polyMD/
 ```
 
 2. Create conda environment.
 
 ```sh
-$ module load python
-$ conda env create --prefix=/path/to/new/environment -f environment.yml
-$ source activate polyMD
+module load python
+conda env create --prefix=/path/to/new/environment -f environment.yml
+source activate polyMD
 ```
 
 ## Usage
