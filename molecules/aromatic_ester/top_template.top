@@ -1,0 +1,13 @@
+; Include forcefield parameters
+#include "/project2/depablo/achabbi/molecules/aromatic_ester/forcefield.itp"
+
+; Include molecule topologies
+#include "./ARO.itp"
+
+[ system ]
+; Name
+Aromatic Ester PE
+
+[ molecules ]
+; Compound        #mols
+ARO               100

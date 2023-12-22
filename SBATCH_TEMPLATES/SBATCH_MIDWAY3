@@ -71,5 +71,3 @@ gmx_mpi mdrun -v -deffnm npt/npt
 
 gmx_mpi grompp -maxwarn 10 -c npt/npt.gro -f MDP/nvt.mdp -p ${ff} -o nvt/nvt.tpr
 gmx_mpi mdrun -v -deffnm nvt/nvt
-
-

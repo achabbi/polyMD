@@ -74,4 +74,3 @@ gmx_mpi mdrun -v -deffnm nvt/nvt
 
 #gmx_mpi grompp -maxwarn 10 -c nvt/nvt.gro -f MDP/anneal.mdp -p ${ff} -o anneal/anneal.tpr
 #gmx_mpi mdrun -v -deffnm anneal/anneal
-

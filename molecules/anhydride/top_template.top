@@ -1,0 +1,13 @@
+; Include forcefield parameters
+#include "/project2/depablo/achabbi/molecules/anhydride/forcefield.itp"
+
+; Include molecule topologies
+#include "./ANH.itp"
+
+[ system ]
+; Name
+Anhydride PE
+
+[ molecules ]
+; Compound        #mols
+ANH               100

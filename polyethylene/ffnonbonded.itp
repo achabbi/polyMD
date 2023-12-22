@@ -1,8 +1,0 @@
-[ atomtypes ]
-; FROM OPLS
-; name  at.num   mass       charge    ptype     sigma      epsilon
-  CT1   6        15.035     0.000     A         0.396      0.570
-  CO1   6        14.027     0.000     A         0.396      0.380
-  CO2   6        14.027     0.000     A         0.396      0.380
-
-

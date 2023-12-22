@@ -1,0 +1,13 @@
+; Include forcefield parameters
+#include "/project2/depablo/achabbi/molecules/urethane/forcefield.itp"
+
+; Include molecule topologies
+#include "./URE.itp"
+
+[ system ]
+; Name
+Urethane PE
+
+[ molecules ]
+; Compound        #mols
+URE               100

@@ -1,0 +1,13 @@
+; Include forcefield parameters
+#include "/project2/depablo/achabbi/molecules/carbonate/forcefield.itp"
+
+; Include molecule topologies
+#include "./CAR.itp"
+
+[ system ]
+; Name
+Carbonate PE
+
+[ molecules ]
+; Compound        #mols
+CAR               100

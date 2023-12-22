@@ -1,0 +1,129 @@
+To initialize the oneapi environment, you must run the following:
+source /software/oneapi-2021.beta7-el7-x86_64/inteloneapi/setvars.sh
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx insert-molecules uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+Setting the LD random seed to -2305
+
+Generated 66 of the 66 non-bonded parameter combinations
+
+Generated 66 of the 66 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'AMI'
+
+turning all bonds into constraints...
+Analysing residue names:
+There are:  5300      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 894 Mb of data
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+Setting the LD random seed to -1209188481
+
+Generated 66 of the 66 non-bonded parameter combinations
+
+Generated 66 of the 66 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'AMI'
+
+turning all bonds into constraints...
+
+Setting gen_seed to -639640325
+
+Velocities were taken from a Maxwell distribution at 300 K
+Analysing residue names:
+There are:  5300      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 523.15 K
+
+Calculated rlist for 1x1 atom pair-list as 1.400 nm, buffer size 0.000 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.400 nm, buffer size 0.000 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+Setting the LD random seed to -493223941
+
+Generated 66 of the 66 non-bonded parameter combinations
+
+Generated 66 of the 66 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'AMI'
+
+turning all bonds into constraints...
+Analysing residue names:
+There are:  5300      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 473 K
+
+Calculated rlist for 1x1 atom pair-list as 1.420 nm, buffer size 0.020 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.402 nm, buffer size 0.002 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+This run will generate roughly 213 Mb of data
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
+Setting the LD random seed to -229394
+
+Generated 66 of the 66 non-bonded parameter combinations
+
+Generated 66 of the 66 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'AMI'
+
+turning all bonds into constraints...
+Analysing residue names:
+There are:  5300      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 473 K
+
+Calculated rlist for 1x1 atom pair-list as 1.422 nm, buffer size 0.022 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.403 nm, buffer size 0.003 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+MPI startup(): PMI server not found. Please set I_MPI_PMI_LIBRARY variable if it is not a singleton case.
+MPI startup(): shm:dapl fabric is unknown or has been removed from the product, please use ofi or shm:ofi instead.
+WARNING: release_mt library was used but no multi-ep feature was enabled. Please use release library instead.
