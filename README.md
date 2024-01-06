@@ -111,4 +111,4 @@ python compile.py -c EST
 
 ## License and Acknowledgements
 
-Copyright (c) 2023 Archit Chabbi, María Ley Flores. This was research was performed at the de Pablo group at the University of Chicago. Resources were provided by the University of Chicago Research Computing Center.
+Copyright (c) 2023 Archit Chabbi, María Ley Flores. This research was performed at the de Pablo group at the University of Chicago. Resources were provided by the University of Chicago Research Computing Center.
