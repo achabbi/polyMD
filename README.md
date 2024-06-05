@@ -109,6 +109,6 @@ Run [`compile.py`](scripts/compile.py) to compile results into a single csv for 
 python compile.py -c EST
 ```
 
-## License and Acknowledgements
+## Citation
 
-Copyright (c) 2023 Archit Chabbi, María Ley Flores. This research was performed at the de Pablo group at the University of Chicago. Resources were provided by the University of Chicago Research Computing Center.
+M. Flores, A. Chabbi, R. Alessandri, S. Marsden, I. Vettese, S. Rowan, J. de Pablo, "Numerical Study of Cleavable Bond-Modified Polyethylene for Circular Polymer Design," arXiv:2404.09341v2 [cond-mat.soft], April 2024.
